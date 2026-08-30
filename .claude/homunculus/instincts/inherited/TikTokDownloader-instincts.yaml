@@ -1,0 +1,345 @@
+# Instincts generated from https://github.com/JamesWilliam1977/TikTokDownloader
+# Generated: 2026-08-02T07:00:41.307Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: TikTokDownloader-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/TikTokDownloader
+---
+
+# TikTokDownloader Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: build, chore
+
+## Evidence
+
+- 4 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore: 使用 cx_Freeze 构建可执行文件, build(deps): bump uvicorn from 0.51.0 to 0.52.1
+
+---
+id: TikTokDownloader-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/TikTokDownloader
+---
+
+# TikTokDownloader Commit Length
+
+## Action
+
+Write moderate-length commit messages (~53 characters)
+
+## Evidence
+
+- Average commit message length: 53 chars
+- Based on 4 commits
+
+---
+id: TikTokDownloader-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/TikTokDownloader
+---
+
+# TikTokDownloader Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: TikTokDownloader-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/TikTokDownloader
+---
+
+# TikTokDownloader Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: TikTokDownloader-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/TikTokDownloader
+---
+
+# TikTokDownloader Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: TikTokDownloader-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/TikTokDownloader
+---
+
+# TikTokDownloader Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: TikTokDownloader-workflow-dependency-update
+trigger: "when doing dependency update"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/TikTokDownloader
+---
+
+# TikTokDownloader Workflow Dependency Update
+
+## Action
+
+Follow the dependency-update workflow:
+1. Update dependency version in pyproject.toml
+2. Update dependency version in requirements.txt
+3. Update lockfile uv.lock
+4. Commit changes with a message indicating the dependency and new version
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: pyproject.toml, requirements.txt, uv.lock
+
+---
+id: tiktokdownloader-instinct-file-naming
+trigger: "When creating a new Python file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in namingConventions.files: snake_case
+
+---
+id: tiktokdownloader-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: tiktokdownloader-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: tiktokdownloader-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: tiktokdownloader-instinct-import-style
+trigger: "When importing modules within the package"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: tiktokdownloader-instinct-export-style
+trigger: "When exporting functions or classes from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: tiktokdownloader-instinct-test-location
+trigger: "When adding or organizing tests"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct Test Location
+
+## Action
+
+Place tests in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: tiktokdownloader-instinct-git-commit-prefix
+trigger: "When writing a commit message for build or maintenance changes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct Git Commit Prefix
+
+## Action
+
+Prefix the commit message with 'build' or 'chore' following conventional commit format
+
+## Evidence
+
+- Seen in commit: 'chore: 使用 cx_Freeze 构建可执行文件'
+- Seen in commit: 'build(deps): bump uvicorn from 0.51.0 to 0.52.1'
+
+---
+id: tiktokdownloader-instinct-git-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct Git Commit Length
+
+## Action
+
+Keep the commit message concise, around 53 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength: 53
+
+---
+id: tiktokdownloader-instinct-dependency-update-workflow
+trigger: "When a dependency needs to be updated (e.g., via Dependabot)"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/TikTokDownloader
+---
+
+# Tiktokdownloader Instinct Dependency Update Workflow
+
+## Action
+
+Update dependency version in pyproject.toml, requirements.txt, and uv.lock, then commit with a message indicating the dependency and new version
+
+## Evidence
+
+- Workflow: dependency-update
+- Files involved: pyproject.toml, requirements.txt, uv.lock
+- Commit sequence in workflow and examples
+
